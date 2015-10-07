@@ -11,7 +11,7 @@ public class CarTreeSet {
 	
 	public static void main(String[] args) {
 		//1
-		//IGNORE THIS
+		//dummy list
 		ArrayList<Car> cars = new ArrayList<Car>();
 
 		//we add the cars
@@ -38,16 +38,25 @@ public class CarTreeSet {
 		fisHorseCars2.addAll(cars);
 		
 		//2
-		//we will extract the elements from fisHorseCars on a LIFO basis
+		//we will extract the elements from fisHorseCar and engineDisCars2 on a LIFO basis
+		System.out.println("*****fisHorseCar, LIFO*****");
 		while (!fisHorseCars.isEmpty() ) {
 			System.out.println(fisHorseCars.pollLast());
 		}
+		System.out.println("*****fisHorseCar, LIFO*****");
+		while (!engineDisCars2.isEmpty() ) {
+			System.out.println(engineDisCars2.pollLast());
+		}
 		
 		//3
-		//we will extract the elements from engineDisCars on a FIFO basis
-		System.out.println(engineDisCars.size());
+		//we will extract the elements from engineDisCars and fisHorseCars2 on a FIFO basis
+		System.out.println("*****engineDisCars, FIFO*****");
 		while (!engineDisCars.isEmpty() ) {
 			System.out.println(engineDisCars.pollFirst());
+		}
+		System.out.println("*****fisHorseCars2, FIFO*****");
+		while (!fisHorseCars2.isEmpty() ) {
+			System.out.println(fisHorseCars2.pollFirst());
 		}
 		
 	

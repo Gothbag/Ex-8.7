@@ -65,8 +65,7 @@ public class Car {
 	}
 	
 	public String toString(){
-		return this.getMake() + " " + this.getModel() + " " + this.getEngineDisplacement() + " " + this.getNCylinders();
-		
+		return this.getMake() + " " + this.getModel() + " " + this.getEngineDisplacement() + " " + this.getNCylinders() + " " + this.getFiscalHorsepower();		
 	}
 
 	@Override
